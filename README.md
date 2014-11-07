@@ -1,17 +1,18 @@
 Role Name
 =========
 
-Set swappiness to 0 so server will only swap if running out of memory. A monitoring check should verify that 0 bytes of swap are used when running in production.
+Sets the timezone of Debian based systems.
 
 Requirements
 ------------
 
-A debian based system is enough
+A Debian based system is enough
 
 Role Variables
 --------------
 
-none
+ - timezone, default: UTC, examples: "Europe/Berlin", "Europe/Stockholm", "America/New_York", ...
+
 
 Dependencies
 ------------
@@ -23,7 +24,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: staenker.server-swappiness }
+         - { role: staenker.timezone, timezone: Europe/Berlin }
 
 License
 -------
