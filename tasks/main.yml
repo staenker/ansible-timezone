@@ -1,7 +1,7 @@
 ---
 - name: set timezone variables
   template:
-    src: timezone.j2
+    src: etc/timezone.j2
     dest: /etc/timezone
     owner: root
     group: root
