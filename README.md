@@ -1,4 +1,4 @@
-Role Name
+staenker.timezone
 =========
 
 Sets the timezone of Debian based systems.
