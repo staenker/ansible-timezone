@@ -1,5 +1,6 @@
 staenker.timezone
 =========
+[![Ansible Galaxy](http://img.shields.io/badge/galaxy-staenker.timezone.ferm-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2119)
 
 Sets the timezone of Debian based systems.
 
