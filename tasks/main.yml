@@ -1,13 +1,11 @@
 ---
 - name: set timezone variables
-  copy:
-    content: |
-      {{ timezone }}
-
+  template:
+    src: timezone.j2
     dest: /etc/timezone
-    owner: root
-    group: root
-    mode: 0644
-    backup: no
+        owner: root
+        group: root
+        mode: 0644
+        backup: no
   notify:
   - dpkg-reconfigure tzdata
